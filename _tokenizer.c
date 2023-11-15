@@ -17,7 +17,7 @@ char **_str_delim(char *s, char *delim)
 	if (!delim)
 		delim = " ";
 	for (i = 0; s[i] != '\0'; i++)
-		if (!is__delimeter(s[i], delim) && 
+		if (!is__delimeter(s[i], delim) &&
 		(is__delimeter(s[i + 1], delim) || !s[i + 1]))
 			num_words++;
 
